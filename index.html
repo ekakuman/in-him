@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>In Him — Shadows, Purpose &amp; Walk</title>
+<meta name="description" content="A three-part visual Bible study: the types of Christ and His three offices, the eternal purpose of God to gather all things in Christ, and living on earth with a spiritual perspective.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f0e4;--card:#fffcf6;--ink:#2a2118;--muted:#6e604f;--line:#e4d9c5;--soft:#efe6d5;
+  --pro:#5a4796;--pro-bg:#efebf8;--pri:#2d6f73;--pri-bg:#e6f2f1;--king:#8b5a28;--king-bg:#f6ece0;
+  --gold:#9a7414;--gold-bg:#fbf3dc;--gold-hi:#f1d98a;--night:#1c2236;--night2:#28304a;
+  --earth:#8a6f57;--earth-bg:#f1e8dc;--life:#4f7a3a;--life-bg:#ecf3e6;--warn:#a3322c;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:15.5px;line-height:1.55;-webkit-text-size-adjust:100%}
+h1,h2,h3,.serif{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;line-height:1.08;margin:0}
+.te{font-family:"Noto Sans Telugu",sans-serif;font-weight:400}
+p{margin:0 0 .6em}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+.ref{font-size:12.5px;color:var(--muted);font-weight:500}
+.k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+q,.q{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.13em;quotes:"“" "”"}
+
+/* nav */
+nav{position:sticky;top:0;z-index:30;background:rgba(246,240,228,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+nav .in{max-width:1120px;margin:0 auto;padding:8px 14px;display:flex;align-items:center;gap:12px}
+nav .brand{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:21px;white-space:nowrap}
+nav .steps{display:flex;gap:6px;flex:1;justify-content:flex-end}
+nav .steps a{text-decoration:none;display:flex;align-items:center;gap:7px;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 12px 6px 6px;font-size:13px;font-weight:600}
+nav .steps a b{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--soft);font-size:12px}
+nav .steps a.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+nav .steps a.on b{background:var(--gold-hi);color:var(--ink)}
+@media(max-width:700px){nav .brand{display:none}nav .steps{justify-content:space-between}nav .steps a span{display:none}nav .steps a{padding:6px}nav .steps a.on span{display:inline}nav .steps a.on{padding-right:12px}}
+
+/* pages */
+.page{display:none;max-width:1120px;margin:0 auto;padding:22px 14px 40px}
+.page.on{display:block;animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.hero{border-radius:20px;padding:28px 26px 24px;color:#fbf3dc;background:radial-gradient(120% 140% at 85% 0%,#3a4366 0%,var(--night) 55%,#141a2a 100%);position:relative;overflow:hidden;margin-bottom:18px}
+.hero:after{content:"";position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(241,217,138,.35),rgba(241,217,138,0) 70%)}
+.hero .k{color:var(--gold-hi)}
+.hero h1{font-size:44px;margin:6px 0 4px;color:#fff}
+.hero .te{color:#bcd0ee;font-size:17px}
+.hero .verse{margin-top:14px;max-width:760px;font-size:18px;color:#f2ecdf}
+.hero .verse .ref{white-space:nowrap;color:#c3cbda;font-style:normal;font-family:Inter,sans-serif}
+@media(max-width:600px){.hero h1{font-size:34px}.hero{padding:22px 18px}}
+.lead{font-size:16px;max-width:860px;margin:0 2px 18px;color:#3d3328}
+.section{margin:26px 0 12px}
+.section h2{font-size:29px}
+.section p{color:var(--muted);margin:4px 0 0;max-width:840px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.grid{display:grid;gap:12px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g5{grid-template-columns:repeat(5,1fr)}
+@media(max-width:900px){.g3,.g5{grid-template-columns:1fr}.g2{grid-template-columns:1fr}}
+
+/* chapter 1 */
+.typestrip{display:flex;flex-wrap:wrap;gap:7px}
+.tchip{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 11px 5px 9px;font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px;cursor:pointer;transition:transform .15s}
+.tchip:hover{transform:translateY(-1px)}
+.tchip i{width:9px;height:9px;border-radius:50%;display:inline-block}
+.tchip.dim{opacity:.25}
+.legend{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0}
+.legend button{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:4px 10px;font-size:12px;font-weight:600;display:flex;align-items:center;gap:6px}
+.legend button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.legend i{width:9px;height:9px;border-radius:50%;display:inline-block}
+.tdetail{margin-top:10px;display:none}
+.tdetail.on{display:block}
+.tdetail .row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px}
+.tdetail .row>div{border-radius:10px;padding:9px 11px;font-size:14px}
+.sh{background:var(--earth-bg);border-left:3px solid var(--earth)}
+.su{background:var(--gold-bg);border-left:3px solid var(--gold)}
+.stop{font-size:13px;color:var(--muted);margin-top:8px}.stop b{color:var(--warn)}
+@media(max-width:600px){.tdetail .row{grid-template-columns:1fr}}
+
+.office{border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--card);display:flex;flex-direction:column}
+.office .top{padding:14px 16px;color:#fff}
+.office.pro .top{background:var(--pro)}.office.pri .top{background:var(--pri)}.office.king .top{background:var(--king)}
+.office .top h3{font-size:28px}
+.office .top .te{font-size:14px;opacity:.9}
+.office .top .role{font-size:13.5px;margin-top:4px;opacity:.95}
+.office .body{padding:12px 16px 14px;display:flex;flex-direction:column;gap:10px;flex:1}
+.office .lbl{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;margin-bottom:2px}
+.office.pro .lbl{color:var(--pro)}.office.pri .lbl{color:var(--pri)}.office.king .lbl{color:var(--king)}
+.office .need{font-size:14px}
+.office .fail{font-size:14px;background:#f8efe9;border-radius:10px;padding:8px 10px}
+.office .fail .lbl{color:var(--warn)!important}
+.office .ful{font-size:14px;background:var(--gold-bg);border-radius:10px;padding:8px 10px}
+.office .ful .lbl{color:var(--gold)!important}
+.office .shadows{display:flex;flex-wrap:wrap;gap:5px}
+.office .shadows span{font-size:12px;font-weight:600;border-radius:999px;padding:2px 9px;background:var(--soft)}
+.converge{display:block;width:100%;height:auto;margin:-2px 0 0}
+.christbar{background:var(--ink);color:#fbf3dc;border-radius:16px;padding:16px 18px;text-align:center}
+.christbar h3{font-size:30px;color:var(--gold-hi)}
+.christbar p{margin:6px auto 0;max-width:780px;font-size:14.5px;color:#e9e1cf}
+.apart{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.apart .card h3{font-size:22px;margin-bottom:4px}
+.apart .bad{border-top:4px solid var(--warn)}.apart .good{border-top:4px solid var(--gold)}
+@media(max-width:760px){.apart{grid-template-columns:1fr}}
+.tense{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:16px;overflow:hidden;border:1px solid var(--line)}
+.tense>div{padding:14px 16px;background:var(--card);position:relative}
+.tense>div+div{border-left:1px solid var(--line)}
+.tense .when{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.tense h3{font-size:23px;margin:2px 0 4px}
+.tense .note{grid-column:1/-1;background:var(--soft);font-size:13px;color:var(--muted);border-left:0!important;border-top:1px solid var(--line);padding:9px 16px}
+@media(max-width:760px){.tense{grid-template-columns:1fr}.tense>div+div{border-left:0;border-top:1px solid var(--line)}}
+
+.bridge{margin:28px 0 0;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;background:linear-gradient(90deg,var(--gold-bg),#fff8e6);border:1px solid #ead9a6;border-radius:16px;padding:16px 18px}
+.bridge p{margin:0;font-family:"Cormorant Garamond",serif;font-size:21px;font-weight:600;max-width:720px}
+.bridge a,.btn{text-decoration:none;background:var(--ink);color:#fff;border-radius:999px;padding:10px 18px;font-weight:600;font-size:14px;white-space:nowrap;border:0}
+
+/* chapter 2 */
+.arc{background:linear-gradient(180deg,#141a2a 0%,var(--night) 44%,#2b2a2a 50%,#f1e8dc 50.2%,#f6efe2 100%);border-radius:18px;border:1px solid var(--line);overflow:hidden}
+.arc svg{display:block;width:100%;height:auto}
+.arc svg .st{cursor:pointer}
+.arcinfo{margin-top:10px}
+.arcinfo .card{display:none}
+.arcinfo .card.on{display:block;animation:fade .3s}
+.arcinfo h3{font-size:25px}
+.arcinfo .vv{margin-top:8px;display:grid;gap:6px}
+.arcinfo .vv div{font-size:14.5px;border-left:3px solid var(--gold);padding:2px 0 2px 10px}
+.carry .card{border-top:4px solid}
+.carry .card h3{font-size:23px;margin:2px 0 6px}
+.carry .pro{border-top-color:var(--pro)}.carry .pri{border-top-color:var(--pri)}.carry .king{border-top-color:var(--king)}
+.carry .card .v{font-size:14px;margin-top:6px}
+.gather{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.gather .card{text-align:center;padding:14px 10px}
+.gather svg{width:64px;height:40px;display:block;margin:0 auto 6px}
+.gather h3{font-size:19px}
+.gather p{font-size:13px;color:var(--muted);margin:4px 0 0}
+@media(max-width:900px){.gather{grid-template-columns:1fr 1fr}}
+.lenses{display:grid;grid-template-columns:repeat(5,1fr);border-radius:16px;overflow:hidden;border:1px solid var(--line)}
+.lenses>div{padding:12px 13px;background:var(--card)}
+.lenses>div+div{border-left:1px solid var(--line)}
+.lenses .n{font-family:"Cormorant Garamond",serif;font-size:34px;color:var(--gold);line-height:1}
+.lenses h3{font-size:20px;margin:2px 0}
+.lenses .gd{font-size:13.5px}
+.lenses .us{font-size:13px;color:var(--muted);margin-top:6px;border-top:1px dashed var(--line);padding-top:6px}
+@media(max-width:900px){.lenses{grid-template-columns:1fr}.lenses>div+div{border-left:0;border-top:1px solid var(--line)}}
+
+/* chapter 3 */
+.eph{display:grid;grid-template-columns:1fr auto 1fr;align-items:stretch;gap:0;border-radius:18px;overflow:hidden;border:1px solid var(--line)}
+.eph .up{background:linear-gradient(160deg,var(--night),#2e3756);color:#f2ecdf;padding:18px}
+.eph .down{background:var(--earth-bg);padding:18px}
+.eph h3{font-size:26px}
+.eph .up h3{color:var(--gold-hi)}
+.eph .up .ref{color:#c3cbda}
+.eph ul{margin:8px 0 0;padding-left:18px;font-size:14.5px}
+.eph li{margin:3px 0}
+.eph .hinge{background:var(--gold);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:12px 14px;text-align:center;max-width:190px}
+.eph .hinge h3{font-size:22px;color:#fff}
+.eph .hinge p{font-size:13px;margin:6px 0 0;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:16px}
+@media(max-width:800px){.eph{grid-template-columns:1fr}.eph .hinge{max-width:none}}
+.share .card{border-left:5px solid}
+.share .pro{border-left-color:var(--pro)}.share .pri{border-left-color:var(--pri)}.share .king{border-left-color:var(--king)}
+.share h3{font-size:23px}
+.share .sub{font-size:13px;color:var(--muted);margin-bottom:6px}
+.share ul{margin:6px 0 0;padding-left:18px;font-size:14px}
+.guard{font-size:13px;color:var(--muted);margin-top:10px;padding:8px 12px;border-radius:10px;background:var(--soft)}
+.life{border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--card)}
+.life .tabs{display:flex;flex-wrap:wrap;gap:6px;padding:12px;border-bottom:1px solid var(--line);background:var(--soft)}
+.life .tabs button{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600}
+.life .tabs button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.life .panel{display:none;grid-template-columns:1fr 1.25fr 1fr;gap:0}
+.life .panel.on{display:grid;animation:fade .3s}
+.life .panel>div{padding:14px 16px}
+.life .panel>div+div{border-left:1px solid var(--line)}
+.life .panel .e{background:var(--earth-bg)}
+.life .panel .h{background:var(--gold-bg)}
+.life .panel .lbl{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;margin-bottom:4px;color:var(--muted)}
+.life .panel .e .lbl{color:var(--earth)}.life .panel .h .lbl{color:var(--gold)}
+.life .panel p{font-size:14.5px}
+.life .ofc{display:grid;gap:6px}
+.life .ofc div{font-size:14px;padding-left:10px;border-left:3px solid}
+.life .ofc .p1{border-color:var(--pro)}.life .ofc .p2{border-color:var(--pri)}.life .ofc .p3{border-color:var(--king)}
+.life .ofc b{font-weight:600}
+@media(max-width:800px){.life .panel.on{grid-template-columns:1fr}.life .panel>div+div{border-left:0;border-top:1px solid var(--line)}}
+.refrain{text-align:center;padding:26px 18px;border-radius:18px;background:radial-gradient(120% 140% at 50% 0%,#3a4366,var(--night) 60%);color:#fff}
+.refrain h2{font-size:34px;color:#fff;max-width:820px;margin:0 auto}
+.refrain .te{display:block;color:#bcd0ee;font-size:17px;margin-top:8px}
+.refrain .habit{display:inline-block;margin-top:16px;background:rgba(241,217,138,.14);border:1px solid rgba(241,217,138,.5);border-radius:999px;padding:8px 16px;color:var(--gold-hi);font-weight:600;font-size:14px}
+.finale{display:grid;grid-template-columns:1.2fr 1fr;gap:12px}
+.finale .card h3{font-size:24px;margin-bottom:6px}
+@media(max-width:800px){.finale{grid-template-columns:1fr}}
+.story{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);margin-top:14px}
+.story a{text-decoration:none;padding:14px 16px;background:var(--card);display:block}
+.story a+a{border-left:1px solid var(--line)}
+.story .n{font-family:"Cormorant Garamond",serif;font-size:28px;color:var(--gold);line-height:1}
+.story h3{font-size:21px}
+.story p{font-size:13px;color:var(--muted);margin:2px 0 0}
+@media(max-width:700px){.story{grid-template-columns:1fr}.story a+a{border-left:0;border-top:1px solid var(--line)}}
+footer{max-width:1120px;margin:0 auto;padding:4px 16px 36px;font-size:12.5px;color:var(--muted)}
+
+/* print: three pages */
+@media print{
+  nav,.bridge,.legend,.life .tabs{display:none!important}
+  body{background:#fff;font-size:11.5px}
+  .page{display:block!important;padding:0;max-width:none;break-after:page;page-break-after:always}
+  .page:last-of-type{break-after:auto}
+  .hero{padding:14px 18px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .hero h1{font-size:30px}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .life .panel{display:grid!important;grid-template-columns:1fr 1.25fr 1fr!important;border-top:1px solid var(--line)}
+  .life .panel>div{padding:6px 8px}
+  .arcinfo .card{display:none!important}
+  .tdetail{display:none!important}
+  .section{margin:12px 0 6px}.section h2{font-size:20px}
+  @page{size:letter;margin:.4in}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="in">
+  <div class="brand">In Him</div>
+  <div class="steps">
+    <a href="#shadows" data-p="shadows"><b>1</b><span>Shadows &amp; Offices</span></a>
+    <a href="#purpose" data-p="purpose"><b>2</b><span>Eternal Purpose</span></a>
+    <a href="#walk" data-p="walk"><b>3</b><span>Earthly Walk</span></a>
+  </div>
+</div></nav>
+
+<!-- ===================== PAGE 1 ===================== -->
+<section class="page" id="p-shadows">
+  <div class="hero">
+    <div class="k">Chapter 1 · He was pictured</div>
+    <h1>Shadows that point to Him — and the Three Offices</h1>
+    <div class="te">క్రీస్తు పూర్వరూపాలు — ప్రవక్త, యాజకుడు, రాజు</div>
+    <div class="verse"><q>And beginning at Moses and all the prophets, he expounded unto them in all the scriptures the things concerning himself.</q> <span class="ref">Luke 24:27</span></div>
+  </div>
+
+  <p class="lead">Last month we traced the types: persons, events and objects the New Testament itself says were <em>shadows</em> of Christ (Col 2:17; Heb 10:1). This study steps back and asks a bigger question. Every one of those shadows was serving one of three anointed offices in Israel: the <b style="color:var(--pro)">prophet</b>, the <b style="color:var(--pri)">priest</b> and the <b style="color:var(--king)">king</b>. Christ means “the Anointed”, and He fills all three at once.</p>
+
+  <div class="section"><div class="k">Recap · what we studied</div><h2>The types, sorted by the office they serve</h2><p>Tap a type to see the shadow, the substance and where the comparison stops. Tap an office to highlight its types.</p></div>
+  <div class="card">
+    <div class="typestrip" id="typestrip"></div>
+    <div class="legend" id="legend"></div>
+    <div class="tdetail" id="tdetail"></div>
+  </div>
+
+  <div class="section"><div class="k">New in this study</div><h2>Three offices, three needs, one Anointed</h2><p>Each office answered a need of man before God. Each was held by men who died or failed. Each is fulfilled in Christ.</p></div>
+  <div class="grid g3">
+    <div class="office pro"><div class="top"><h3>Prophet</h3><div class="te">ప్రవక్త</div><div class="role">Speaks <b>for God to the people</b></div></div>
+      <div class="body">
+        <div class="need"><div class="lbl">Our need</div>We are in darkness and need God's word and light (John 1:18; 8:12).</div>
+        <div><div class="lbl">Shadows</div><div class="shadows"><span>Moses</span><span>Jonah</span><span>Samuel</span><span>Elijah</span><span>Jacob's ladder</span></div></div>
+        <div class="fail"><div class="lbl">Where the earthly office fell short</div>The prophets were rejected and killed: <q>O Jerusalem, Jerusalem, thou that killest the prophets</q> (Matt 23:37). Moses died outside the land.</div>
+        <div class="ful"><div class="lbl">Fulfilled in Christ</div><q>A Prophet… like unto me; unto him ye shall hearken</q> (Deut 18:15; Acts 3:22). God <q>hath in these last days spoken unto us by his Son</q> (Heb 1:2). He does not just carry the word; He <em>is</em> the Word (John 1:14).</div>
+      </div></div>
+    <div class="office pri"><div class="top"><h3>Priest</h3><div class="te">యాజకుడు</div><div class="role">Goes <b>to God for the people</b></div></div>
+      <div class="body">
+        <div class="need"><div class="lbl">Our need</div>We are guilty and need reconciliation with a holy God (Heb 9:22, 26).</div>
+        <div><div class="lbl">Shadows</div><div class="shadows"><span>Passover lamb</span><span>Isaac offered</span><span>Aaron</span><span>Tabernacle</span><span>Veil</span><span>Mercy seat</span><span>Day of Atonement</span><span>Blood of the covenant</span></div></div>
+        <div class="fail"><div class="lbl">Where the earthly office fell short</div><q>They truly were many priests, because they were not suffered to continue by reason of death</q> (Heb 7:23). Their sacrifices <q>can never take away sins</q> (Heb 10:11).</div>
+        <div class="ful"><div class="lbl">Fulfilled in Christ</div>Priest and sacrifice in one: <q>by one offering he hath perfected for ever them that are sanctified</q> (Heb 10:14). <q>He ever liveth to make intercession for them</q> (Heb 7:25).</div>
+      </div></div>
+    <div class="office king"><div class="top"><h3>King</h3><div class="te">రాజు</div><div class="role">Rules <b>the people under God</b></div></div>
+      <div class="body">
+        <div class="need"><div class="lbl">Our need</div>We are in bondage and rebellion and need a rightful ruler and deliverer (Col 1:13).</div>
+        <div><div class="lbl">Shadows</div><div class="shadows"><span>David</span><span>Solomon</span><span>Rejected cornerstone</span><span>Israel, God's son</span></div></div>
+        <div class="fail"><div class="lbl">Where the earthly office fell short</div>David's throne ended with Zedekiah: <q>remove the diadem… until he come whose right it is</q> (Ezek 21:26–27).</div>
+        <div class="ful"><div class="lbl">Fulfilled in Christ</div><q>Thy throne shall be established for ever</q> (2 Sam 7:16) → <q>of his kingdom there shall be no end</q> (Luke 1:33). <q>KING OF KINGS, AND LORD OF LORDS</q> (Rev 19:16).</div>
+      </div></div>
+  </div>
+  <svg class="converge" viewBox="0 0 1000 70" preserveAspectRatio="none" aria-hidden="true">
+    <defs><marker id="ah" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0L10,5L0,10z" fill="#9a7414"/></marker></defs>
+    <path d="M166,0 C166,40 500,30 500,64" fill="none" stroke="#5a4796" stroke-width="3" marker-end="url(#ah)"/>
+    <path d="M500,0 L500,64" fill="none" stroke="#2d6f73" stroke-width="3" marker-end="url(#ah)"/>
+    <path d="M834,0 C834,40 500,30 500,64" fill="none" stroke="#8b5a28" stroke-width="3" marker-end="url(#ah)"/>
+  </svg>
+  <div class="christbar">
+    <div class="k" style="color:var(--gold-hi)">Messiah · Christ · the Anointed · అభిషిక్తుడు</div>
+    <h3>Jesus Christ — Prophet, Priest &amp; King</h3>
+    <p>Prophets, priests and kings were each anointed with oil (1 Ki 19:16; Exod 29:7; 1 Sam 16:13). <q>God anointed Jesus of Nazareth with the Holy Ghost and with power</q> (Acts 10:38). The other shadows (Adam, manna, the smitten rock, the bronze serpent, the ark, the sabbath rest) show what He gives through these offices: new headship, life, the Spirit, healing, safety and rest.</p>
+  </div>
+
+  <div class="section"><div class="k">Why it had to be Christ</div><h2>Kept apart in Israel, joined only by God's oath</h2></div>
+  <div class="apart">
+    <div class="card bad"><div class="k" style="color:var(--warn)">Judged</div><h3>Kings who reached for the priest's work</h3>
+      <p><b>Saul</b> offered the burnt offering himself and lost the kingdom (1 Sam 13:9–14). <b>Uzziah</b> went in to burn incense and was struck with leprosy: <q>It appertaineth not unto thee</q> (2 Chr 26:18).</p>
+      <p class="ref">The offices were not to be combined by human hands.</p></div>
+    <div class="card good"><div class="k" style="color:var(--gold)">Approved</div><h3>The two pictures where God joins them</h3>
+      <p><b>Melchizedek</b>, king of Salem and priest of the most high God (Gen 14:18): <q>Thou art a priest for ever after the order of Melchizedek</q> (Ps 110:4; Heb 7:1–3). <b>The Branch</b>: <q>he shall be a priest upon his throne</q> (Zech 6:13).</p>
+      <p class="ref">What no man could take, God gave to His Son by oath (Heb 7:20–21).</p></div>
+  </div>
+
+  <div class="section"><div class="k">Past · present · future</div><h2>How Christ carries the three offices through time</h2></div>
+  <div class="tense">
+    <div><div class="when" style="color:var(--pro)">He came · past</div><h3>Prophet on earth</h3><p>He preached the kingdom and revealed the Father: <q>he that hath seen me hath seen the Father</q> (John 14:9).</p></div>
+    <div><div class="when" style="color:var(--pri)">He lives · present</div><h3>Priest in heaven</h3><p>Entered <q>into heaven itself, now to appear in the presence of God for us</q> (Heb 9:24); He intercedes now (Rom 8:34).</p></div>
+    <div><div class="when" style="color:var(--king)">He comes · future</div><h3>King over all</h3><p><q>The kingdoms of this world are become the kingdoms of our Lord, and of his Christ</q> (Rev 11:15).</p></div>
+    <div class="note">This is a matter of emphasis, not separation. He is all three at once: He reigns now at the right hand (Eph 1:20–22), and He still speaks through His word (Heb 12:25).</div>
+  </div>
+
+  <div class="bridge"><p>Why does every shadow lead to one Person? Because God purposed it before the world began.</p><a href="#purpose">Chapter 2 · The eternal purpose →</a></div>
+</section>
+
+<!-- ===================== PAGE 2 ===================== -->
+<section class="page" id="p-purpose">
+  <div class="hero">
+    <div class="k">Chapter 2 · He gathers all</div>
+    <h1>The Eternal Purpose: All Things Gathered in Christ</h1>
+    <div class="te">దేవుని నిత్య సంకల్పము — సమస్తమును క్రీస్తునందు</div>
+    <div class="verse"><q>That in the dispensation of the fulness of times he might gather together in one all things in Christ, both which are in heaven, and which are on earth; even in him.</q> <span class="ref">Ephesians 1:10</span></div>
+  </div>
+
+  <p class="lead">The types were not scattered hints. They were pieces of one plan, <q>the eternal purpose which he purposed in Christ Jesus our Lord</q> (Eph 3:11), set before time and carried out in time. Christ is not one point along that line. He is the one in whom the whole line holds together (Col 1:17).</p>
+
+  <div class="section"><div class="k">The storyline</div><h2>From before the foundation to the fulness of times</h2><p>Tap a station. The upper band is the unseen, heavenly realm; the lower band is earth and history. The gold axis is Christ, through whom both are joined.</p></div>
+  <div class="arc">
+    <svg viewBox="0 0 1000 330" id="arcsvg" role="img" aria-label="Timeline of God's eternal purpose with Christ as the central axis">
+      <defs>
+        <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1d98a" stop-opacity=".95"/><stop offset=".5" stop-color="#f1d98a"/><stop offset="1" stop-color="#9a7414" stop-opacity=".9"/></linearGradient>
+        <radialGradient id="glow"><stop offset="0" stop-color="#f1d98a" stop-opacity=".7"/><stop offset="1" stop-color="#f1d98a" stop-opacity="0"/></radialGradient>
+      </defs>
+      <g fill="#fff" opacity=".55"><circle cx="60" cy="30" r="1.2"/><circle cx="140" cy="70" r="1"/><circle cx="230" cy="24" r="1.4"/><circle cx="330" cy="90" r="1"/><circle cx="410" cy="40" r="1.2"/><circle cx="610" cy="30" r="1.1"/><circle cx="700" cy="80" r="1.3"/><circle cx="790" cy="22" r="1"/><circle cx="880" cy="60" r="1.4"/><circle cx="950" cy="110" r="1"/><circle cx="90" cy="120" r="1"/><circle cx="560" cy="110" r="1"/></g>
+      <text x="20" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#f1d98a" font-family="Inter">THINGS IN HEAVEN · UNSEEN · ETERNAL</text>
+      <text x="20" y="318" font-size="11" font-weight="700" letter-spacing="1.5" fill="#8a6f57" font-family="Inter">THINGS ON EARTH · SEEN · TEMPORAL</text>
+      <line x1="30" y1="165" x2="970" y2="165" stroke="#c9b27a" stroke-width="2" stroke-dasharray="2 5"/>
+      <circle cx="500" cy="165" r="90" fill="url(#glow)"/>
+      <rect x="492" y="34" width="16" height="262" rx="8" fill="url(#beam)"/>
+      <g id="stations"></g>
+      <g class="st" data-s="2"><rect x="420" y="140" width="160" height="50" rx="25" fill="#2a2118" stroke="#f1d98a" stroke-width="2"/><text x="500" y="162" text-anchor="middle" fill="#f1d98a" font-family="Cormorant Garamond,serif" font-size="21" font-weight="700">In Christ</text><text x="500" y="179" text-anchor="middle" fill="#fbf3dc" font-size="10.5" font-family="Inter">“even in him” · Eph 1:10</text></g>
+    </svg>
+  </div>
+  <div class="arcinfo" id="arcinfo"></div>
+
+  <div class="section"><div class="k">The bridge from Chapter 1</div><h2>How the three offices carry out the eternal purpose</h2><p>The plan is to gather all things in Christ. Each office does a part of that gathering.</p></div>
+  <div class="grid g3 carry">
+    <div class="card pro"><div class="k" style="color:var(--pro)">Prophet</div><h3>He reveals the mystery</h3><p>The purpose was <q>hid in God</q> and is now made known (Eph 3:9). God has <q>made known unto us the mystery of his will</q> (Eph 1:9), <q>revealed unto his holy apostles and prophets by the Spirit</q> (Eph 3:5).</p><div class="v ref">Heb 1:1–2 · Col 1:26–27</div></div>
+    <div class="card pri"><div class="k" style="color:var(--pri)">Priest</div><h3>He reconciles all things</h3><p><q>Having made peace through the blood of his cross, by him to reconcile all things unto himself… whether they be things in earth, or things in heaven</q> (Col 1:20). Jew and Gentile reconciled <q>in one body by the cross</q> (Eph 2:16).</p><div class="v ref">Eph 1:7 · Heb 9:12</div></div>
+    <div class="card king"><div class="k" style="color:var(--king)">King</div><h3>He heads up all things</h3><p>Raised <q>far above all principality, and power</q>, with <q>all things under his feet</q>, and given <q>to be the head over all things to the church</q> (Eph 1:21–22). <q>He must reign, till he hath put all enemies under his feet</q> (1 Cor 15:25).</p><div class="v ref">1 Cor 15:24–28 · Phil 2:9–11</div></div>
+  </div>
+
+  <div class="section"><div class="k">What is being gathered</div><h2>Five things brought together in one</h2></div>
+  <div class="gather">
+    <div class="card"><svg viewBox="0 0 64 40"><rect x="4" y="12" width="20" height="16" rx="3" fill="#d9ccb5"/><rect x="40" y="8" width="20" height="24" rx="4" fill="#9a7414"/><path d="M26 20h10" stroke="#9a7414" stroke-width="2.5"/></svg><h3>Shadow into substance</h3><p><q>The body is of Christ</q> (Col 2:17)</p></div>
+    <div class="card"><svg viewBox="0 0 64 40"><circle cx="20" cy="20" r="12" fill="#2d6f73" opacity=".8"/><circle cx="44" cy="20" r="12" fill="#8b5a28" opacity=".8"/></svg><h3>Jew &amp; Gentile</h3><p><q>One new man, so making peace</q> (Eph 2:15)</p></div>
+    <div class="card"><svg viewBox="0 0 64 40"><rect x="4" y="2" width="56" height="16" rx="4" fill="#28304a"/><rect x="4" y="22" width="56" height="16" rx="4" fill="#d9ccb5"/><rect x="29" y="2" width="6" height="36" rx="3" fill="#f1d98a"/></svg><h3>Heaven &amp; earth</h3><p>Both <q>even in him</q> (Eph 1:10)</p></div>
+    <div class="card"><svg viewBox="0 0 64 40"><circle cx="32" cy="12" r="7" fill="#5a4796"/><circle cx="16" cy="28" r="6" fill="#5a4796" opacity=".7"/><circle cx="32" cy="30" r="6" fill="#5a4796" opacity=".7"/><circle cx="48" cy="28" r="6" fill="#5a4796" opacity=".7"/></svg><h3>The whole family</h3><p><q>In heaven and earth is named</q> (Eph 3:15)</p></div>
+    <div class="card"><svg viewBox="0 0 64 40"><path d="M10 34h44L32 6z" fill="#9a7414" opacity=".85"/></svg><h3>All under one Head</h3><p><q>That God may be all in all</q> (1 Cor 15:28)</p></div>
+  </div>
+
+  <div class="section"><div class="k">The Divine Blueprint lens</div><h2>God's part, and our response by faith</h2><p>The same five stages from our blueprint series, each anchored in Ephesians 1–3.</p></div>
+  <div class="lenses">
+    <div><div class="n">1</div><h3>Purpose</h3><div class="gd">Chosen <q>in him before the foundation of the world</q> (Eph 1:4)</div><div class="us">We live <q>holy and without blame</q></div></div>
+    <div><div class="n">2</div><h3>Provision</h3><div class="gd"><q>Redemption through his blood</q> (Eph 1:7)</div><div class="us">We forgive as we were forgiven (Eph 4:32)</div></div>
+    <div><div class="n">3</div><h3>People</h3><div class="gd"><q>Adoption of children by Jesus Christ</q> (Eph 1:5)</div><div class="us">We live as one household (Eph 2:19)</div></div>
+    <div><div class="n">4</div><h3>Goal</h3><div class="gd"><q>An habitation of God through the Spirit</q> (Eph 2:22)</div><div class="us">Our homes and work become His dwelling</div></div>
+    <div><div class="n">5</div><h3>Consummation</h3><div class="gd"><q>Gather together in one all things in Christ</q> (Eph 1:10)</div><div class="us">We bring every area under Christ now</div></div>
+  </div>
+
+  <div class="bridge"><p>If all things are being gathered in Him, then an ordinary Monday is part of that plan too.</p><a href="#walk">Chapter 3 · The earthly walk →</a></div>
+</section>
+
+<!-- ===================== PAGE 3 ===================== -->
+<section class="page" id="p-walk">
+  <div class="hero">
+    <div class="k">Chapter 3 · We live it</div>
+    <h1>On Earth, with a Heavenly Perspective</h1>
+    <div class="te">భూమిపై జీవితం — నిత్య దృష్టితో</div>
+    <div class="verse"><q>While we look not at the things which are seen, but at the things which are not seen: for the things which are seen are temporal; but the things which are not seen are eternal.</q> <span class="ref">2 Corinthians 4:18</span></div>
+  </div>
+
+  <p class="lead">Living with a spiritual perspective does not mean looking away from earth. Ordinary earthly life is <em>where</em> the invisible plan becomes visible. Ephesians is built this way: three chapters of what is true in the heavenlies, then three chapters of how we walk on earth.</p>
+
+  <div class="eph">
+    <div class="up"><div class="k" style="color:var(--gold-hi)">Ephesians 1–3 · Seated</div><h3>What is true in heaven</h3>
+      <ul><li>Chosen before the foundation (1:4)</li><li>Blessed with every spiritual blessing (1:3)</li><li>Seated together in heavenly places (2:6)</li><li>The church displays God's wisdom to the powers (3:10)</li></ul></div>
+    <div class="hinge"><h3>Eph 4:1</h3><p>“walk worthy of the vocation wherewith ye are called”</p></div>
+    <div class="down"><div class="k" style="color:var(--earth)">Ephesians 4–6 · Walk &amp; Stand</div><h3>How we live on earth</h3>
+      <ul><li>Unity, humility and truthful speech (4:1–32)</li><li>Marriage, children and parents (5:22–6:4)</li><li>Work and masters (6:5–9)</li><li>The armour and the unseen battle (6:10–18)</li></ul></div>
+  </div>
+
+  <div class="section"><div class="k">Anointed in the Anointed One</div><h2>We share His three offices in daily life</h2><p><q>Ye have an unction from the Holy One</q> (1 John 2:20). He <q>hath made us kings and priests unto God and his Father</q> (Rev 1:6).</p></div>
+  <div class="grid g3 share">
+    <div class="card pro"><div class="k" style="color:var(--pro)">Prophetic</div><h3>We speak for Him</h3><div class="sub"><q>That ye should shew forth the praises of him who hath called you</q> (1 Pet 2:9)</div>
+      <ul><li>Speak the truth in love (Eph 4:15, 25)</li><li>Give a reason for the hope in you (1 Pet 3:15)</li><li>Let the word of Christ dwell in you richly (Col 3:16)</li></ul></div>
+    <div class="card pri"><div class="k" style="color:var(--pri)">Priestly</div><h3>We come to God for others</h3><div class="sub"><q>To offer up spiritual sacrifices, acceptable to God by Jesus Christ</q> (1 Pet 2:5)</div>
+      <ul><li>Present your bodies a living sacrifice (Rom 12:1)</li><li>The sacrifice of praise, and doing good (Heb 13:15–16)</li><li>Intercede for all men (1 Tim 2:1)</li></ul></div>
+    <div class="card king"><div class="k" style="color:var(--king)">Kingly</div><h3>We rule under Him</h3><div class="sub"><q>Shall reign in life by one, Jesus Christ</q> (Rom 5:17)</div>
+      <ul><li>Rule your own spirit (Prov 16:32)</li><li>Be faithful over a few things (Matt 25:21)</li><li>If we suffer, we shall also reign with him (2 Tim 2:12)</li></ul></div>
+  </div>
+  <div class="guard">We share in His offices; we never replace them. <q>There is one God, and one mediator between God and men, the man Christ Jesus</q> (1 Tim 2:5).</div>
+
+  <div class="section"><div class="k">Daily life</div><h2>The earthly task, the spiritual perspective, the effect in heaven</h2><p>Pick an area of life.</p></div>
+  <div class="life">
+    <div class="tabs" id="lifetabs"></div>
+    <div id="lifepanels"></div>
+  </div>
+
+  <div class="section"></div>
+  <div class="refrain">
+    <div class="k" style="color:var(--gold-hi)">The one thing to remember</div>
+    <h2>What we do on earth matters in heaven, so live every day with eternity in view.</h2>
+    <span class="te">భూమిపై మనం చేసేది పరలోకంలో ముఖ్యం — కాబట్టి నిత్య దృష్టితో జీవిద్దాం.</span>
+    <div class="habit">Before you decide, ask: “How does this look from eternity?” · Col 3:2</div>
+  </div>
+
+  <div class="section"><div class="k">Where the story ends</div><h2>Where earth and eternity meet</h2></div>
+  <div class="finale">
+    <div class="card"><h3>The song of the redeemed</h3><p><q>Thou art worthy… for thou wast slain, and hast redeemed us to God by thy blood out of every kindred, and tongue, and people, and nation; And hast made us unto our God kings and priests: and we shall reign on the earth.</q></p><p class="ref">Revelation 5:9–10. The Lamb (priest) on the throne (king), the Word (prophet) fully revealed, and a people from every nation reigning with Him <em>on the earth</em>.</p></div>
+    <div class="card" style="background:var(--gold-bg);border-color:#ead9a6"><h3>Doxology</h3><p><q>Unto him be glory in the church by Christ Jesus throughout all ages, world without end. Amen.</q></p><p class="ref">Ephesians 3:21</p></div>
+  </div>
+
+  <div class="story">
+    <a href="#shadows"><div class="n">1</div><h3>He was pictured</h3><p>Shadows and three offices</p></a>
+    <a href="#purpose"><div class="n">2</div><h3>He gathers all</h3><p>The eternal purpose in Christ</p></a>
+    <a href="#walk"><div class="n">3</div><h3>We live it</h3><p>Earthly walk, heavenly view</p></a>
+  </div>
+</section>
+
+<footer>Scripture quotations are from the King James Version (public domain). Each type is drawn from a New Testament text that names it; where the comparison should stop is stated. Print this page to get the three chapters as three pages.</footer>
+
+<script>
+/* ---------- types (Chapter 1) ---------- */
+const OC={prophet:"#5a4796",priest:"#2d6f73",king:"#8b5a28",life:"#4f7a3a"};
+const OL={prophet:"Prophet",priest:"Priest",king:"King",life:"What He gives (life, rest, refuge)"};
+const TYPES=[
+ ["Adam & the Last Adam","king","Gen 1–3","Rom 5:14–19; 1 Cor 15:45","Head of the race; one disobedience brought death to all.","The Last Adam: one obedience brings life; “a quickening spirit”.","Mostly by contrast: Christ undoes what Adam did."],
+ ["Passover lamb","priest","Exod 12","1 Cor 5:7; John 1:29; 19:36","A spotless lamb; its blood spared the firstborn.","“Christ our passover is sacrificed for us.” Not a bone broken.","The household details and yearly meal are not carried over."],
+ ["Bronze serpent","life","Num 21:8–9","John 3:14–15","The bitten looked at the serpent on a pole and lived.","The Son of man “lifted up”, that whoever believes has eternal life.","The object had no power; when worshipped, Hezekiah broke it (2 Ki 18:4)."],
+ ["Melchizedek","priest","Gen 14:18–20; Ps 110:4","Heb 5:6–10; 7:1–28","King of Salem and priest of the most high God.","A priest for ever, king of righteousness and peace.","“Without father, without mother” is the record's silence, not a supernatural origin."],
+ ["Manna","life","Exod 16","John 6:31–35, 48–51","Daily bread from heaven that spoiled by morning.","“I am the bread of life”; whoever eats “shall live for ever”.","“Your fathers did eat manna… and are dead” (John 6:49)."],
+ ["The smitten rock","life","Exod 17:6; Num 20:8–11","1 Cor 10:4; John 7:37–39","Water poured from the struck rock.","“That Rock was Christ”: living water, the Spirit.","Moses' second striking was disobedience; Christ is not struck again."],
+ ["Jonah","prophet","Jonah 1–3","Matt 12:39–41","Three days in the fish, then preaching to Nineveh.","Three days in the heart of the earth; “a greater than Jonas is here”.","Jonah fled and resented mercy; Christ came willingly."],
+ ["Sabbath rest","life","Gen 2:2–3; Exod 20:8–11","Heb 4:1–11; Col 2:16–17","Rest from labour, and the rest of Canaan.","“There remaineth therefore a rest to the people of God.”","Churches differ on how this applies to the Lord's Day."],
+ ["Noah's ark","life","Gen 6–8","1 Pet 3:20–21","Eight souls saved through the water.","Salvation “by the resurrection of Jesus Christ”.","Peter adds it is “not the putting away of the filth of the flesh”."],
+ ["Isaac offered","priest","Gen 22","Heb 11:17–19; Rom 8:32","Abraham offered his only son and received him back “in a figure”.","God “spared not his own Son”.","Isaac was spared; Christ was not."],
+ ["Tabernacle","priest","Exod 25–40","John 1:14; Heb 8:5; 9:11","God dwelling in a tent among Israel.","“The Word was made flesh, and dwelt among us.”","The NT does not assign meanings to boards and sockets."],
+ ["The veil","priest","Exod 26:31–33","Heb 10:19–20; Matt 27:51","A curtain barring the way into the holiest.","A new and living way “through the veil, that is to say, his flesh”.","Hebrews draws only this one link."],
+ ["Day of Atonement","priest","Lev 16","Heb 9:7–14","Once a year, blood behind the veil.","Christ entered once “by his own blood”, obtaining eternal redemption.","He needed no offering for Himself."],
+ ["Mercy seat","priest","Exod 25:17–22","Rom 3:25; Heb 9:5","The gold lid where blood was sprinkled.","Set forth “to be a propitiation through faith in his blood”.","The exact sense of Rom 3:25 is debated."],
+ ["Blood of the covenant","priest","Exod 24:6–8","Matt 26:28; Heb 9:18–22","“Behold the blood of the covenant.”","“My blood of the new testament… for the remission of sins.”","The old was written on stone; the new on the heart."],
+ ["Moses the prophet","prophet","Deut 18:15–18","Acts 3:22–23; Heb 3:1–6","Mediator of the law, face to face with God.","The promised Prophet; faithful as a Son over the house.","Moses was kept from the land; Christ is counted worthy of more glory."],
+ ["Jacob's ladder","prophet","Gen 28:12","John 1:51","A ladder joining heaven and earth.","Angels ascending and descending “upon the Son of man”.","Jesus applies the image without explaining its parts."],
+ ["Rejected cornerstone","king","Ps 118:22","Matt 21:42; 1 Pet 2:6–8","The stone the builders refused.","Rejected by Israel's leaders, made head of the corner.","Psalm 118 first speaks of the king and nation delivered."],
+ ["David the shepherd-king","king","1 Sam 16–17; Ps 23","John 10:11; Matt 22:41–45","Shepherd boy who became king.","The Good Shepherd; Son of David and David's Lord.","David's sins are no part of the type."],
+ ["Greater than Solomon","king","1 Ki 3–10","Matt 12:42","The wise king of peace.","“A greater than Solomon is here.”","Solomon's idolatry is no part of the type."],
+ ["Israel, God's son","king","Exod 4:22; Hos 11:1","Matt 2:15; 4:1–11","Called out of Egypt, tested forty years, and failed.","Called out of Egypt, tested forty days, and obeyed.","Hosea 11:1 is Israel's history, read by Matthew as a pattern."]
+];
+let tFilter=null,tOpen=null;
+const $=s=>document.querySelector(s);
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+function renderTypes(){
+ $("#typestrip").innerHTML=TYPES.map((t,i)=>`<button class="tchip ${tFilter&&tFilter!==t[1]?"dim":""}" data-i="${i}"><i style="background:${OC[t[1]]}"></i>${esc(t[0])}</button>`).join("");
+ $("#legend").innerHTML=Object.keys(OL).map(k=>`<button class="${tFilter===k?"on":""}" data-o="${k}"><i style="background:${OC[k]}"></i>${OL[k]}</button>`).join("");
+ document.querySelectorAll("#typestrip .tchip").forEach(b=>b.onclick=()=>{tOpen=+b.dataset.i===tOpen?null:+b.dataset.i;renderDetail()});
+ document.querySelectorAll("#legend button").forEach(b=>b.onclick=()=>{tFilter=tFilter===b.dataset.o?null:b.dataset.o;renderTypes()});
+}
+function renderDetail(){
+ const d=$("#tdetail");
+ if(tOpen===null){d.classList.remove("on");return}
+ const t=TYPES[tOpen];
+ d.innerHTML=`<div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:10px"><h3 style="font-size:24px">${esc(t[0])}</h3><span class="ref" style="color:${OC[t[1]]};font-weight:700">${OL[t[1]]}</span></div><div class="ref">OT ${esc(t[2])} · NT ${esc(t[3])}</div><div class="row"><div class="sh"><div class="k" style="color:var(--earth)">Shadow · earthly</div>${esc(t[4])}</div><div class="su"><div class="k" style="color:var(--gold)">Substance · in Christ</div>${esc(t[5])}</div></div><div class="stop"><b>Where it stops:</b> ${esc(t[6])}</div>`;
+ d.classList.add("on");
+}
+
+/* ---------- arc (Chapter 2) ---------- */
+const ST=[
+ {x:110,y:95,t:"Purposed",s:"Before the foundation of the world",up:true,v:[["Chosen us in him before the foundation of the world","Eph 1:4"],["His own purpose and grace, which was given us in Christ Jesus before the world began","2 Tim 1:9"],["The Lamb slain from the foundation of the world","Rev 13:8"]],p:"The plan was settled in eternity, in Christ, before anything was made. Nothing in history caught God unprepared."},
+ {x:300,y:235,t:"Pictured",s:"Shadows in Israel's history",up:false,v:[["The law having a shadow of good things to come","Heb 10:1"],["Which are a shadow of things to come; but the body is of Christ","Col 2:17"],["They are they which testify of me","John 5:39"]],p:"Chapter 1: Adam, the lamb, the serpent, Melchizedek, the prophets, priests and kings. Each was an earthly picture of the coming Anointed One."},
+ {x:500,y:165,t:"Fulfilled",s:"In the fulness of time",up:false,v:[["When the fulness of the time was come, God sent forth his Son","Gal 4:4"],["The Word was made flesh, and dwelt among us","John 1:14"],["Foreordained before the foundation of the world, but was manifest in these last times for you","1 Pet 1:20"]],p:"The eternal Son entered time. The shadows met their substance: Prophet, Priest and King in one Person, crucified, risen and seated at the right hand."},
+ {x:700,y:235,t:"Displayed",s:"Through the church, now",up:false,v:[["That now unto the principalities and powers in heavenly places might be known by the church the manifold wisdom of God","Eph 3:10"],["According to the eternal purpose which he purposed in Christ Jesus our Lord","Eph 3:11"],["For to make in himself of twain one new man","Eph 2:15"]],p:"Today the purpose is on display. An ordinary church of forgiven people, Jew and Gentile at one table, shows God's wisdom to the unseen powers. This is where Chapter 3 begins."},
+ {x:890,y:95,t:"Gathered",s:"The fulness of times",up:true,v:[["Gather together in one all things in Christ, both which are in heaven, and which are on earth","Eph 1:10"],["That God may be all in all","1 Cor 15:28"],["Behold, the tabernacle of God is with men, and he will dwell with them","Rev 21:3"]],p:"The end is not an escape from earth but heaven and earth joined under one Head, and God dwelling with His people for ever."}
+];
+let sOpen=2;
+function renderArc(){
+ let g="";
+ // path
+ g+=`<path d="M${ST[0].x},${ST[0].y} C 200,95 220,235 ${ST[1].x},${ST[1].y} S 430,165 ${ST[2].x},${ST[2].y} S 610,235 ${ST[3].x},${ST[3].y} S 800,95 ${ST[4].x},${ST[4].y}" fill="none" stroke="#c9a74a" stroke-width="2.5" stroke-dasharray="6 5" opacity=".9"/>`;
+ ST.forEach((s,i)=>{
+  if(i===2)return;
+  const on=i===sOpen;
+  const ly=s.up?s.y+42:s.y+44;
+  const fill=s.up?"#f1d98a":"#8a6f57", txt=s.up?"#fbf3dc":"#2a2118", sub=s.up?"#c3cbda":"#6e604f";
+  g+=`<g class="st" data-s="${i}"><circle cx="${s.x}" cy="${s.y}" r="${on?20:15}" fill="${on?"#f1d98a":fill}" stroke="${on?"#fff":"none"}" stroke-width="3"/><text x="${s.x}" y="${s.y+5}" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="16" font-weight="700" fill="#2a2118">${i+1}</text><text x="${s.x}" y="${ly}" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="21" font-weight="700" fill="${txt}">${s.t}</text><text x="${s.x}" y="${ly+16}" text-anchor="middle" font-family="Inter" font-size="11" fill="${sub}">${s.s}</text></g>`;
+ });
+ $("#stations").innerHTML=g;
+ document.querySelectorAll("#arcsvg .st").forEach(e=>e.onclick=()=>{sOpen=+e.dataset.s;renderArc()});
+ $("#arcinfo").innerHTML=ST.map((s,i)=>`<div class="card ${i===sOpen?"on":""}"><div class="k" style="color:var(--gold)">Station ${i+1} of 5 · ${s.s}</div><h3>${s.t}</h3><p style="margin-top:4px">${s.p}</p><div class="vv">${s.v.map(v=>`<div><q>${esc(v[0])}</q> <span class="ref">${v[1]}</span></div>`).join("")}</div></div>`).join("");
+}
+
+/* ---------- daily life (Chapter 3) ---------- */
+const LIFE=[
+ {n:"Home & marriage",e:"Loving a spouse, raising children, keeping a household through busy weeks.",o:[["Prophetic","teach the children the ways of the Lord (Eph 6:4; Deut 6:7)"],["Priestly","pray for the household and forgive quickly (Eph 4:32)"],["Kingly","order the home in love, not by force (Eph 5:25; 6:4)"]],h:"Marriage is <q>a great mystery: but I speak concerning Christ and the church</q> (Eph 5:32). A faithful home is a picture the unseen powers see (Eph 3:10)."},
+ {n:"Work, jobs & visas",e:"Searching for a job, applying, waiting on a visa, working under a difficult manager.",o:[["Prophetic","let your integrity speak, as Joseph and Daniel did abroad (Dan 6:4)"],["Priestly","pray for those over you and seek the peace of the city (1 Tim 2:1–2; Jer 29:7)"],["Kingly","work <q>heartily, as to the Lord, and not unto men</q> (Col 3:23)"]],h:"God <q>determined the times before appointed, and the bounds of their habitation</q> (Acts 17:26). <q>Of the Lord ye shall receive the reward of the inheritance: for ye serve the Lord Christ</q> (Col 3:24)."},
+ {n:"Money & possessions",e:"Earning, budgeting, giving, saving, and resisting the pull of more.",o:[["Prophetic","be a witness that Christ, not wealth, is your treasure (Heb 13:5)"],["Priestly","give and share, <q>for with such sacrifices God is well pleased</q> (Heb 13:16)"],["Kingly","steward what is entrusted, faithful in little (Luke 16:10–11)"]],h:"<q>Lay up for yourselves treasures in heaven… For where your treasure is, there will your heart be also</q> (Matt 6:20–21)."},
+ {n:"Words & relationships",e:"Conversations at home, at church and online; conflicts, misunderstandings and reconciliation.",o:[["Prophetic","speak the truth in love (Eph 4:15, 25)"],["Priestly","bless, do not curse; seek reconciliation (Rom 12:14; Matt 5:23–24)"],["Kingly","rule your tongue and your temper (Jas 3:2; Prov 16:32)"]],h:"Unwholesome words <q>grieve not the holy Spirit of God, whereby ye are sealed unto the day of redemption</q> (Eph 4:29–30). Our speech touches the unseen."},
+ {n:"Suffering & waiting",e:"Illness, loss, delay, unanswered prayer, seasons that do not make sense.",o:[["Prophetic","testify that God is faithful in the storm (Ps 46:1; 2 Cor 1:4)"],["Priestly","bring the pain to the throne of grace (Heb 4:16)"],["Kingly","endure, knowing <q>if we suffer, we shall also reign with him</q> (2 Tim 2:12)"]],h:"<q>Our light affliction, which is but for a moment, worketh for us a far more exceeding and eternal weight of glory</q> (2 Cor 4:17)."},
+ {n:"The unseen battle",e:"Temptation, discouragement, conflict that seems only human.",o:[["Prophetic","take <q>the sword of the Spirit, which is the word of God</q> (Eph 6:17)"],["Priestly","<q>praying always with all prayer and supplication</q> (Eph 6:18)"],["Kingly","stand in His victory, having put on the whole armour (Eph 6:13)"]],h:"<q>We wrestle not against flesh and blood, but against principalities, against powers</q> (Eph 6:12). What happens on earth is part of a conflict in the heavenlies."}
+];
+let lOpen=1;
+function renderLife(){
+ $("#lifetabs").innerHTML=LIFE.map((l,i)=>`<button class="${i===lOpen?"on":""}" data-l="${i}">${esc(l.n)}</button>`).join("");
+ $("#lifepanels").innerHTML=LIFE.map((l,i)=>`<div class="panel ${i===lOpen?"on":""}"><div class="e"><div class="lbl">Earthly · temporal</div><h3 style="font-size:22px;margin-bottom:4px">${esc(l.n)}</h3><p>${l.e}</p></div><div><div class="lbl">Spiritual perspective · in His offices</div><div class="ofc">${l.o.map((o,j)=>`<div class="p${j+1}"><b>${o[0]}:</b> ${o[1]}</div>`).join("")}</div></div><div class="h"><div class="lbl">↑ In heaven · eternal</div><p>${l.h}</p></div></div>`).join("");
+ document.querySelectorAll("#lifetabs button").forEach(b=>b.onclick=()=>{lOpen=+b.dataset.l;renderLife()});
+}
+
+/* ---------- routing ---------- */
+const PAGES=["shadows","purpose","walk"];
+function go(){
+ let p=location.hash.slice(1);if(!PAGES.includes(p))p="shadows";
+ PAGES.forEach(x=>document.getElementById("p-"+x).classList.toggle("on",x===p));
+ document.querySelectorAll("nav .steps a").forEach(a=>a.classList.toggle("on",a.dataset.p===p));
+ window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",go);
+renderTypes();renderArc();renderLife();go();
+</script>
+</body>
+</html>
